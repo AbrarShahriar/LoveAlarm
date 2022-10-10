@@ -1,0 +1,14 @@
+{
+  "appId": "com.abrarshahriar.lovealarm",
+  "appName": "LoveAlarm",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    },
+    "LocalNotifications": {
+      "allowWhileIdle": true
+    }
+  }
+}

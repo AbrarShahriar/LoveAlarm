@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LoveAlarm</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="icon" type="image/png" href="./assets/imgs/icon_round.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="theme-color" content="#31d53d" />
+  </head>
+  <body>
+    <nav>
+      <img
+        class="navbar_heart"
+        src="./assets/imgs/icon_heart_title.png"
+        alt=""
+      />
+    </nav>
+
+    <main>
+      <h3>LoveAlarm</h3>
+      <div class="main_heart_circle">
+        <img class="main_circle" src="./assets/imgs/ceremony_circle.png" />
+        <img
+          class="main_heart"
+          src="./assets/imgs/ceremony_heart_line.png"
+          alt=""
+        />
+      </div>
+    </main>
+
+    <div class="heart_id">
+      <span class="title">Heart ID:</span>
+      <br />
+      <input type="text" class="uid" value="Loading..." />
+      <button class="copy">Copy</button>
+    </div>
+
+    <footer>
+      <img
+        class="send-noti footer_heart_circle"
+        src="./assets/imgs/btn_floating_white_52dp.png"
+        alt=""
+      />
+    </footer>
+
+    <div class="backdrop">
+      <nav>
+        <img src="./assets/imgs/icon_close_b.png" class="close" alt="" />
+      </nav>
+      <div class="backdrop_body">
+        <img
+          src="./assets/imgs/icon_heart_balloon_color.png"
+          alt=""
+          class="heart_baloon"
+        />
+        <h2>Ring LoveAlarm</h2>
+
+        <input
+          type="text"
+          value=""
+          placeholder="Enter Heart ID..."
+          class="heart_id_input"
+        />
+        <button class="confirm_btn">Confirm</button>
+      </div>
+    </div>
+
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
