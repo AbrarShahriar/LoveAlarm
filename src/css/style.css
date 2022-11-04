@@ -14,13 +14,29 @@ body {
 }
 
 nav {
-  padding: 20px;
+  padding: 15px;
   display: flex;
   justify-content: right;
+
+  /* outline: 2px solid red; */
 }
 
 .navbar_heart {
-  width: 32px;
+  /* outline: 2px solid red; */
+  position: relative;
+}
+
+.navbar_heart_icon {
+  width: 48px;
+}
+
+.navbar_heart_count {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  font-size: 12px;
+  color: whitesmoke;
 }
 
 main {
@@ -49,7 +65,7 @@ main {
   width: max-content;
   position: relative;
   width: 300px;
-  height: 300px;
+  height: 200px;
 }
 
 .main_circle {
@@ -75,19 +91,21 @@ main {
   margin: 0 auto;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
+  margin-top: 80px;
+  /* outline: 2px solid red; */
 }
 
 .uid {
   margin-top: -20px;
-  background-color: transparent;
   color: white;
-  border: none;
   font-size: 16px;
-  width: 150px;
+  width: 200px;
+  height: 20px;
+  overflow-x: hidden;
   text-align: center;
 }
 
-.copy {
+.copybtn {
   background-color: transparent;
   border: none;
   font-size: 16px;
@@ -133,9 +151,12 @@ footer {
 .backdrop_body {
   display: flex;
   max-width: 100%;
-  max-height: 100vh;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
+  position: relative;
+
+  /* outline: 2px solid red; */
 }
 .heart_baloon {
   width: 100px;
@@ -151,24 +172,26 @@ footer {
 }
 
 .heart_id_input {
+  margin-top: 100px;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  margin-top: 100px;
   border-radius: 5px;
   padding: 5px 10px;
   font-size: 18px;
   width: 80%;
+
+  position: sticky;
+  bottom: 0;
 }
 
 .confirm_btn {
-  margin-top: 20px;
+  width: 80%;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   padding: 10px 15px;
   font-size: 16px;
   font-weight: bold;
-  width: 80%;
   margin: 20px auto;
   letter-spacing: 1px;
 }

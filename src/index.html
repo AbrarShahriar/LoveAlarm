@@ -17,11 +17,14 @@
   </head>
   <body>
     <nav>
-      <img
-        class="navbar_heart"
-        src="./assets/imgs/icon_heart_title.png"
-        alt=""
-      />
+      <div class="navbar_heart">
+        <img
+          class="navbar_heart_icon"
+          src="./assets/imgs/icon_heart_title.png"
+          alt=""
+        />
+        <!-- <span class="navbar_heart_count">21</span> -->
+      </div>
     </nav>
 
     <main>
@@ -39,8 +42,8 @@
     <div class="heart_id">
       <span class="title">Heart ID:</span>
       <br />
-      <input type="text" class="uid" value="Loading..." />
-      <button class="copy">Copy</button>
+      <span class="uid" id="uid">Loading...</span>
+      <button data-clipboard-target="#uid" class="copybtn">Copy</button>
     </div>
 
     <footer>
@@ -62,7 +65,6 @@
           class="heart_baloon"
         />
         <h2>Ring LoveAlarm</h2>
-
         <input
           type="text"
           value=""
